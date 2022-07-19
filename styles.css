@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.para-one {
+    color: #ce9797;
+}
+
+.para-one,
+.para-two,
+.para-three {
+    letter-spacing: 15px;
+}
+
+.base-para {
+    color: #ce9797;
+}
+
+.email-input {
+    border: solid #ce9797;
+    /* position: absolute; */
+}
+
+/* ::placeholder {
+    color: #ce9797;
+} */
+
+@media only screen and (max-width: 767px) {
+    .deskpic {
+        display: none;
+    }
+}
+
+.arrow {
+margin: -107px 0 180px 0;
+}
+
+.icon-arrow {
+    background: linear-gradient(to right, rgb(248, 191, 191), #ee8c8c);
+}
+
+.angle {
+    width: 20px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: #3e52a3; 
+}

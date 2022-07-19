@@ -4,24 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="output.css">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main class="lg:grid lg:grid-cols-2">
+    <section>
+      <!-- NAV BAR -->
+    <nav class="w-full h-20 bg-white flex items-center pl-7">
+      <img class="w-20 h-4" src="./images/logo.svg" alt="">
+    </nav>
 
-  We're coming soon
+    <!-- HEADER -->
+    <header class="lg:hidden">
+      <img class="w-full" src="./images/hero-mobile.jpg" alt="">
+    </header>
+    <!-- desktop img -->
+    <div class="deskpic md:hidden lg:block">
+      <img src="./images/hero-desktop.jpg" alt="">
+    </div>
+    </section>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
+    <section class="order-first">
+      <!-- COMING SOON TEXT -->
+      <section class="my-10">
+      <div>
+        <p class="para-one text-center text-3xl font-thin">WE'RE</p>
+        <p class="para-two text-center text-4xl font-medium">COMING</p>
+        <p class="para-three text-center text-4xl font-medium">SOON</p>
+      </div>
+      <p class="base-para leading-tight text-base text-center mx-10 mt-6">
+        Hello fellow shoppers! We're currently building our new fashion store. 
+    Add your email below to stay up-to-date with announcements and our </br> launch deals.
+      </p>
+    </section>
+    <!-- INPUT -->
+    <div class="mt-6 mb-16 px-6 md:px-28 md:mt-20">
+      <input type="email" id="email" class="email-input border rounded-full text-sm block w-full p-2.5" placeholder="Email Address" required>
+  </div> 
+  <!-- BUTTON -->
+  <div class="arrow w-full px-6 md:px-28 flex justify-end">
+    <button class="py-1 px-5 rounded-full icon-arrow">
+      <img class="angle" src="./images/icon-arrow.svg" alt="">
+    </button>
+  </div>
+    </section>
+    
+  </main>
+ 
   
+  <!-- FOOTER -->
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
